@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrool Down</title>
+</head>
+<body>
+    <div id="container">
+        <select id="drop">
+            <option value="name">name</option>
+        </select>
+
+    </div>
+    <script>
+        let arr = ['Ramesh','Raja','Perumal']
+        arr.forEach(val =>{
+        let opt = document.createElement('option')
+        opt.textContent = val
+        opt.value = val
+        document.getElementById('drop').appendChild(opt)
+    });
+    </script>
+</body>
+</html>
